@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+    body{
+    font-family: 'Cabin', sans-serif;
+    margin: 15px 30px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    background-image: linear-gradient(white,rgb(235, 241, 243));
+}
+.container{
+    margin: auto;
+    padding:20px 30px 30px;
+    border:2px solid black;
+}
+fieldset{
+    position: relative;
+}
+
+.main_heading{
+    text-align: center;
+    border:5 px solid black;
+    box-shadow: inset;
+    border-color: black;
+    border-radius: 15px;
+    background-color: rgb(41, 204, 233);
+    color:rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="password"],textarea,option {
+    width:98%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 3px 0px;
+}
+
+/* Submit button is styled here  */
+input[type="submit"]{
+    width:100%;
+    padding: 12px 20px;
+    background-color:rgb(41, 204, 233););
+    border-radius: 6px;
+    box-shadow: inset;
+    border-color: rgb(156, 143, 143);
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styles when hover over submit button  */
+input[type="submit"]:hover{
+    background-color:white;
+    color: rgb(1, 10, 1);
+}
+
+</style>
+   
+
+<body>
+    <div class="container">
+    <form action="">
+        <div class="main_heading">
+        <h1>Techno India Hooghly </h1>
+        <h2>Registration Form</h2>
+        </div>
+        <p>Name:<p><input type="text" name="name" placeholder="Enter the Name" required></p>
+        
+          <p>Gender</p> 
+                <p>
+             Male <input type="radio" name="gender" id="">
+                Female <input type="radio" name="gender" id="">
+                </p>
+                <p>
+                    Date Of Birth:
+                </p>
+                <p>
+                    <input type="date" name="DOB" id="DOB">
+                </p>
+            <p>
+                Address:<p> <textarea name="address" id="Address" cols="200" rows="6"placeholder="Enter the Address" required></textarea></p>
+            </p> 
+            <p>Pin-Code :</p> <p><input type="number" name="PPin-code" id="Pin-codeS" placeholder="Enter the Pin"></p>
+            <p>Contact no:</p>
+            <input type="number" name="contact no" id="contact no" placeholder="contact no">
+            <p>Gurdian's Contact no:</p>
+            <input type="number" name="gcontact no" id="gcontact no" placeholder="contact no">
+           <P>Email :</p><p> <input type="email" name="email" id="email" placeholder="Enter the Email"></P>
+           
+           <p>Course :</p>
+           <select>  
+            <option value="Course">Course</option>  
+            <option value="BCA">BCA</option>  
+            <option value="BBA">BBA</option>   
+            <option value="MCA">MCA</option>   
+            </select>  
+         
+            <p>Highest Qualification :</p>
+            <select>  
+             <option value="Higher Secondary">Higher Secondary</option>  
+             <option value="Graduation">Graduation</option>  
+             <option value="Diploma">Diploma</option>   
+             </select>  
+            <p>
+        <p>Marks in Secondary :</p>
+          <p> <input type="number" name="percentage" id="percentage" placeholder="87%"></p>
+           <p>Marks in HigherSecondary :</p>
+          <p> <input type="number" name="percentage" id="percentage" placeholder="87%"></p>
+           <input type="submit" value="Submit">
+        </p>
+        </div>
+     </form>
+
+    
+</body>
+</html>
