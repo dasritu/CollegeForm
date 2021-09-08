@@ -38,6 +38,29 @@ fieldset{
     font-family: 'Ubuntu', sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
+    animation: colorchange 4s infinite ease-in;
+}
+    @keyframes colorchange {
+
+    0%{
+        background: cyan;
+
+    }
+    20%{
+        background: pink;
+    }
+    40%{
+        background: orange;
+    }
+    60%{
+        background: rgb(180, 130, 228);
+    }
+    80%{
+        background: yellow;
+    }
+    100%{
+        background: gray;
+    }
 }
 input[type="text"],input[type="email"],input[type="number"],input[type="password"],textarea,option {
     width:98%;
